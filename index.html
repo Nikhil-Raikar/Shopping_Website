@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Vanta.js Background</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <span>Cloera</span>
+    </div>
+    <div class="nav-items">
+      <a href="#home" class="nav-item">Home</a>
+      <a href="#search" class="nav-item">Search</a>
+      <a href="#cart" class="nav-item">Cart</a>
+    </div>
+  </nav>
+  
+  <!-- Vanta.js Background with Text -->
+  <div id="vanta-background" class="vanta-background">
+    <div class="promo-text">
+      <h1>Style You’ll Love,</h1>
+      <h1>Prices You’ll Adore..</h1>
+    </div>
+  </div>
+
+  <!-- Thin line with 'Shop Now!' Box -->
+  <div class="shop-now-container">
+    <div class="shop-now-box">
+      <span>Shop Now!</span>
+    </div>
+  </div>
+
+  <!-- Winter Sale Slider Section -->
+  <div class="slider-section">
+    <h2 class="slider-header">Winter sale is live: <span class="red-text">get 50% off</span></h2>
+    <div class="slider-container">
+      <div class="slider" id="slider">
+        <!-- Slider Content -->
+        <div class="slider-item">
+          <img src="men-jacket-2.jpg" alt="Men Jacket">
+          <div class="slider-text">
+            <p>Starting from ₹150 !!</p>
+          </div>
+        </div>
+        <div class="slider-item">
+          <img src="socks.jpg" alt="Socks">
+          <div class="slider-text">
+            <p>Starting from ₹50 !!</p>
+          </div>
+        </div>
+        <div class="slider-item">
+          <img src="shawl.jpg" alt="Socks">
+          <div class="slider-text">
+            <p>Starting from ₹100 !!</p>
+          </div>
+        </div>
+        <div class="slider-item">
+          <img src="jacket-women-1.jpg" alt="Socks">
+          <div class="slider-text">
+            <p>Starting from ₹180 !!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Slider Arrows -->
+      <button class="slider-arrow left" id="prev">&#10094;</button>
+      <button class="slider-arrow right" id="next">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Grid Section -->
+  <div class="grid-section">
+    <h2 class="grid-header">Shop By Category</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="Mens wear.jpg" alt="Product 1">
+        <p class="caption"> Men's wear</p>
+      </div>
+      <div class="grid-item">
+        <img src="Women wear.jpg" alt="Product 2">
+        <p class="caption">Women's wear</p>
+      </div>
+      <div class="grid-item">
+        <img src="gadgets.jpg" alt="Product 3">
+        <p class="caption">Gadgets</p>
+      </div>
+      <div class="grid-item">
+        <img src="beauty.jpg" alt="Product 4">
+        <p class="caption">Beauty Products</p>
+      </div>
+      <!-- Repeat for more grid items -->
+    </div>
+  </div>
+
+  <!-- Men's Collection Grid Section -->
+  <div class="grid-section">
+    <h2 class="grid-header">Men's Collection</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="Mens jacket.jpg" alt="Men's Jacket">
+        <p class="caption">Men's Jacket</p>
+      </div>
+      <div class="grid-item">
+        <img src="Mens tshirt.jpg" alt="Men's T-shirt">
+        <p class="caption">Men's T-shirt</p>
+      </div>
+      <div class="grid-item">
+        <img src="Mens shoes.jpg" alt="Men's Shoes">
+        <p class="caption">Men's Shoes</p>
+      </div>
+      <div class="grid-item">
+        <img src="mens pant.jpg" alt="Men's Jeans">
+        <p class="caption">Men's Jeans</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-section">
+    <h2 class="grid-header">Women's Collection</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="wtrad.jpg" alt="Women's traditional wear">
+        <p class="caption">Traditional wear</p>
+      </div>
+      <div class="grid-item">
+        <img src="wwest.jpg" alt="Women's western wear">
+        <p class="caption">Western wear</p>
+      </div>
+      <div class="grid-item">
+        <img src="women footwear.jpg" alt="Women's footwear">
+        <p class="caption">Women's Footwear</p>
+      </div>
+      <div class="grid-item">
+        <img src="Womens trouer.jpg" alt="Women's trousers">
+        <p class="caption">Women's trousers</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-section">
+    <h2 class="grid-header">Gadget's Collection</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="mobile.jpg" alt="Mobiles and Accessories">
+        <p class="caption">Mobiles and Accessories</p>
+      </div>
+      <div class="grid-item">
+        <img src="keyboard.jpg" alt="IT Accessories">
+        <p class="caption">IT Accessories</p>
+      </div>
+      <div class="grid-item">
+        <img src="Laptop.jpg" alt="Laptops and Tablets">
+        <p class="caption">Laptops and Tablets</p>
+      </div>
+      <div class="grid-item">
+        <img src="home.jpg" alt="Home Appliances">
+        <p class="caption">Home Appliances</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-section">
+    <h2 class="grid-header">Beauty Collection</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="spec.jpg" alt="Spectacles">
+        <p class="caption">Cooling glasses</p>
+      </div>
+      <div class="grid-item">
+        <img src="hair.jpg" alt="Hair Accessories">
+        <p class="caption">Hair Accessories</p>
+      </div>
+      <div class="grid-item">
+        <img src="cosmetics.jpg" alt="Beauty products">
+        <p class="caption">Beauty products</p>
+      </div>
+      <div class="grid-item">
+        <img src="jewe.jpg" alt="Jewelleries">
+        <p class="caption">Jewelleries</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Cloera. All rights reserved.</p>
+      <p>Customer Care: <a href="tel:+9182308224">82308224</a></p>
+      <p>Email: <a href="mailto:helpsupport@gmail.com">helpsupport@gmail.com</a></p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
